@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat' !important;
+}
+body{
+    background-color: #f4f4f2 !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+.onecss{
+    background: rgb(244,244,242);
+    background: linear-gradient(87deg, rgba(249,249,249,1) 2%, #3586ff 56%, #3586ff 100%);
+}
+.modified{
+    background-color: #3586ff !important;
+    width: 100px !important;
+    padding: 5px 10px;
+    word-spacing: 2;
+    float: left;
+    color: white !important;
+}
+.two{
+    border-right:1px solid #69696965;
+    border-left: 1px solid #69696965;
+    padding: 0 10px;
+}
+.three{
+    border-right:1px solid white;
+    border-left: 1px solid white;
+}
+.bi{
+    color: red !important;
+}
+.a1{
+    text-decoration: none;
+    color: #007bff;
+}
+.zoom:hover{
+    transform: scale(1.2); 
+    
+}
+.over{
+    overflow: hidden;
+}
+.zoom{
+    transition: all 0.3s ease;
+}
+.a2{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat' !important;
+}
+.color1{
+    background-color: #3586ff;
+    color: white !important;
+}
+.color2{
+    border-bottom: 2px solid #3586ff;
+}
+.p1{
+    color: rgba(0, 0, 0, 0.607);
+}
+.ps{
+    position: sticky !important;
+    top: 0;
+    height: auto;
+}
+.social{
+    position: fixed !important;
+    height: 70vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    transform: translate(-155px,0);
+}
+.social a{
+    color: #fff !important;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 20px !important;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    margin: 3px;
+    padding:10px 0 10px 10px;
+    width: 195px !important;
+    text-align: right;
+    transition: all 1s ease;
+    transition-property:transform ;
+}
+.social a:hover{
+    transform: translate(110px,0);
+}
+
+.social .bi-facebook {
+    color: #1da0f0 !important;
+    margin: 0 0 0 10px !important;
+}
+
+.social .bi-youtube{
+    color: #f80000 !important;
+    margin: 0 0 0 10px !important;
+}
+.social .bi-twitter{
+    color: #4ecce8 !important;
+    margin: 0 0 0 10px !important;
+}
+footer{
+    margin: 164px 0 0 !important;
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    background-color: #3586ff;
+    padding: 20px 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .icons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .icons li{
+    list-style: none;
+}
+footer .icons li a{
+    font-size: 2em;
+    color: #fff !important;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+footer .icons li a:hover{
+    transform: translateY(-10px);
+}
+footer p{
+    color: #fff !important;
+    text-align: center;
+    margin: 10px 0 10px 20px;
+    font-size: 1.1em;
+}
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px ;
+}
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+@keyframes animateWave_02{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
